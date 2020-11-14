@@ -1,0 +1,10 @@
+{
+  "name": "ts-project-template",
+  "version": "1.0.0",
+  "author": "Ícaro C. Capobianco",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "tsc",
+    "t-watch": "tsc --watch"
+  }
+}
