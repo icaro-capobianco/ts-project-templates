@@ -8,22 +8,22 @@
     "build": "preact build --src src --dest build --sw false --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --no-prerender"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^1.0.9",
+    "@chakra-ui/icons": "^1.0.10",
     "@chakra-ui/react": "^1.5.1",
     "@emotion/react": "^11.1.5",
-    "@emotion/styled": "^11.1.5",
-    "framer-motion": "^3.10.0",
-    "preact": "^10.5.12",
+    "@emotion/styled": "^11.3.0",
+    "framer-motion": "^4.1.4",
+    "preact": "^10.5.13",
     "preact-router": "^3.2.1",
     "react-icons": "^4.2.0"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^6.2.8",
+    "@storybook/cli": "^6.2.8",
+    "@storybook/preact": "^6.2.8",
     "@types/react": "^17.0.3",
     "preact-cli": "^3.0.5",
-    "sb": "^6.2.1",
-    "typescript": "^4.0.5",
-    "@storybook/cli": "^6.2.3",
-    "@storybook/preact": "^6.2.3",
-    "@storybook/addon-essentials": "^6.2.3"
+    "sb": "^6.2.8",
+    "typescript": "^4.2.4"
   }
 }
