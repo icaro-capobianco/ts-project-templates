@@ -4,8 +4,8 @@
 	"author": "Ícaro C. Capobianco",
 	"license": "MIT",
 	"scripts": {
-		"dev": "preact watch --src src --sw false --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --no-prerender --host localhost",
-		"build": "preact build --src src --dest build --sw false --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --no-prerender",
+		"dev": "preact watch --src src --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --host localhost --no-esm --no-sw --no-prerender",
+		"build": "preact build --src src --dest build --babelConfig config/.babelrc --template src/template.html --config config/preact.config.js --no-esm --no-sw --no-prerender",
 		"storybook": "start-storybook -p 6006",
 		"build-storybook": "build-storybook"
 	},
