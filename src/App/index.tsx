@@ -8,7 +8,6 @@ import {
 	ModalFooter,
 	ModalBody,
 	ModalCloseButton,
-	ChakraProvider,
 	Button,
 	useDisclosure,
 } from '@chakra-ui/react'
@@ -19,7 +18,7 @@ const App = () => {
 	const [state, setState] = useState(0)
 
 	return (
-		<ChakraProvider>
+		<>
 			<Button onClick={onOpen}>Open Modal</Button>
 			<Button onClick={setState.bind(null, state + 1)}>
 				Click {state}
@@ -42,7 +41,7 @@ const App = () => {
 					</ModalFooter>
 				</ModalContent>
 			</Modal>
-		</ChakraProvider>
+		</>
 	)
 }
 
