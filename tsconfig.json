@@ -58,8 +58,9 @@
 		// "types": ["node"],
 		"typeRoots": ["node_modules/@types", "src/types"],
 
-		// preact
-		"jsx": "react"
+		// react
+		"jsx": "react",
+		"skipLibCheck": true
 	},
 	"include": ["src/**/*"],
 	"exclude": ["node_modules"],
