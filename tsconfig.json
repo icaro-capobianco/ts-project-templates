@@ -59,7 +59,7 @@
 		"typeRoots": ["node_modules/@types", "src/types"],
 
 		// react
-		"jsx": "react",
+		"jsx": "react-jsx",
 		"skipLibCheck": true
 	},
 	"include": ["src/**/*"],

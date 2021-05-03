@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 
 import {
 	Modal,
@@ -16,9 +16,14 @@ import {
 const App = () => {
 	const { isOpen, onOpen, onClose } = useDisclosure()
 
+	const [state, setState] = useState(0)
+
 	return (
 		<ChakraProvider>
 			<Button onClick={onOpen}>Open Modal</Button>
+			<Button onClick={setState.bind(null, state + 1)}>
+				Click {state}
+			</Button>
 			<Modal isOpen={isOpen} onClose={onClose}>
 				<ModalOverlay />
 				<ModalContent>

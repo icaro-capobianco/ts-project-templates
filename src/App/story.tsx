@@ -1,4 +1,3 @@
-import React from 'react'
 import App from '.'
 
 export const AppStory = () => <App />
