@@ -1,22 +1,23 @@
 // Original https://github.com/bitjson/typescript-starter/blob/master/tsconfig.json
 {
 	"compilerOptions": {
-	  	"incremental": true,
-	  	"target": "ES5",
-	  	"outDir": "lib",
-	  	"rootDir": "src",
-	  	"moduleResolution": "node",
-	  	"module": "commonjs",
-	  	"declaration": true,
-	  	"inlineSourceMap": true,
-	  	/* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
-	  	"esModuleInterop": true,
-	  	/* Include modules imported with .json extension. */
-	  	"resolveJsonModule": true,
-		
+		"rootDir": "src",
+		"target": "ESNext",
+		"outDir": "lib",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		/* Save .tsbuildinfo files to allow for incremental compilation of projects. */
+		"incremental": false,
+		"declaration": true,
+		"inlineSourceMap": true,
+		/* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+		"esModuleInterop": true,
+		/* Include modules imported with .json extension. */
+		"resolveJsonModule": true,
+
 		/* Enable all strict type-checking options. */
-	  	"strict": true,
-  
+		"strict": true,
+
 		/* Strict Type-Checking Options */
 		// "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
 		// "strictNullChecks": true /* Enable strict null checks. */,
@@ -36,6 +37,8 @@
 		"noFallthroughCasesInSwitch": true,
 		/* Add undefined to a type when accessed using an index. */
 		"noUncheckedIndexedAccess": true,
+		/* Ensure that casing is correct in imports. */
+		"forceConsistentCasingInFileNames": true,
 
 		/* Debugging Options */
 		/* Report module resolution log messages. */
@@ -46,16 +49,17 @@
 		"listFiles": false,
 		/* Stylize errors and messages using color and context. */
 		"pretty": true,
-  
 		/* Experimental Options */
 		// "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
 		// "emitDecoratorMetadata": true /* Enables experimental support for emitting type metadata for decorators. */,
 
 		"lib": ["ESNext"],
 		// "types": ["node"],
-		"typeRoots": ["node_modules/@types", "src/types"]
+		"typeRoots": ["node_modules/@types", "src/types"],
+
+		"skipLibCheck": true
 	},
-	"include": ["src/**/*.ts"],
+	"include": ["src/**/*"],
 	"exclude": ["node_modules"],
 	"compileOnSave": false
 }
