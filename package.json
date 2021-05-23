@@ -1,8 +1,11 @@
 {
-	"name": "vite-react-chakra-template",
+	"name": "{name}",
 	"version": "1.0.0",
 	"author": "Ícaro C. Capobianco",
 	"license": "MIT",
+	"main": "es5/index.js",
+	"module": "es6/index.js",
+	"source": "src/index.ts",
 	"scripts": {
 		"es5": "tsc -p tsconfig.json --target es6 --outDir es6 --module es6",
 		"es6": "tsc -p tsconfig.json --target es5 --outDir es5 --module commonjs",
