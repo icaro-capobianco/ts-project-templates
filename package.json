@@ -13,6 +13,7 @@
 		"watch": "concurrently \"npm run es5 --watch\" \"npm run es6 --watch\""
 	},
 	"devDependencies": {
+		"concurrently": "^6.1.0",
 		"typescript": "^4.2.4"
 	}
 }
